@@ -26,10 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called name and set it to Dane.
+// We check if the name variable is an exact match to Mary. Dane != Mary, so 
+// we continue to the else statement.
+// We console.log 'How do you do?'.
 
 //CODE
 /*
@@ -45,10 +45,14 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called secret, but do not set it yet.
+// We make a variable called code and set it to 123 as a number.
+// We check if the code variable is an exact match to the number 123. Code does equal 123, so we now follow the code within {}:
+// We will give our secret variable a value of 'super' and edit our code variable to be equal to the code variable times 2.
+// The code variable is now 246 as a number. 
+// That ends the first if statement, so we will continue on to the next if statement.
+// We check if variable code is greater than 250. Our code variable is 246, which is not greater than 250, so we will not run the code within this statement.
+// Finally, we will console.log secret, which is 'super'.
 
 //CODE
 /*
@@ -70,10 +74,13 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called isStudent and set it the boolean value of true.
+// We make a variable called age and set it to 34 as a number;
+// We make a variable called zip and set it to 55407 as a number;
+// We check if the variable isStudent is equal to true AND if the variable zip is greater than 80000. Since only one condition is true (isStudent), then we will move onto the first else if statement.
+// We check if the variable isStudent is false OR if the variable age is less than 34. Since both conditions are false, we move on to the next else if statement.
+// We check if variable isStudent is true. It is, so we will console.log 'Welcome to Prime!'.
+// Since we found a true statement, our code will not run the final else statement.
 
 //CODE
 /*
@@ -130,11 +137,14 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX - colorOne should be set to 'blue'
 let colorOne = 'red';
+// FIX - colorTwo should be set to 'red'
 let colorTwo = 'blue';
 let mix = true;
 
 if (mix === true) {
+  // FIX - we also need to add colorTwo = 'purple';
   colorOne = 'purple';
 }
 */
@@ -145,8 +155,12 @@ if (mix === true) {
 
 /*
 let temp = 40;
+// FIX - we declared time as a variable, not a constant
+// Should be let time = 4;
 const time = 4;
 
+// FIX - this conditional should check if BOTH are true so we need && instead of ||
+// Should be if (temp > 39 && time >= 4)
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -158,11 +172,16 @@ if (temp > 39 || time >= 4) {
 
 /*
 let age = 21;
+// FIX - We declared minAge as a variable, not a constant
+// Should be let minAge = 21;
 const minAge = 21;
 
+// FIX - just for ease of reading this code, I would change the order to: if(age >= minAge)
 if(minAge <= age) {
+  // FIX - this conditional should console.log('enter') because the age variable is equal to the minAge variable
   console.log('no entry');
 } else {
+  // FIX - if the conditional is not true, then that means the age is under the minAge, so we would console.log('no entry')
   console.log('enter');
 }
 */
